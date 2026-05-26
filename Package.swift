@@ -4,23 +4,22 @@ import PackageDescription
 let package = Package(
     name: "IOSAppTimeTracker",
     platforms: [
-        .iOS(.v17)
+        .iOS(.v16)
     ],
     products: [
         .library(
             name: "IOSAppTimeTracker",
-            targets: ["IOSAppTimeTracker"]
-        )
+            targets: ["IOSAppTimeTracker"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-data.git", from: "1.0.0")
+        // Add dependencies here
     ],
     targets: [
         .target(
             name: "IOSAppTimeTracker",
-            dependencies: [
-                .product(name: "SwiftData", package: "swift-data")
-            ]
-        )
+            dependencies: []),
+        .testTarget(
+            name: "IOSAppTimeTrackerTests",
+            dependencies: ["IOSAppTimeTracker"]),
     ]
 )
