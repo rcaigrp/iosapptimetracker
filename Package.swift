@@ -1,30 +1,35 @@
-// swift-tools-version: 5.9
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
     name: "IOSAppTimeTracker",
+    defaultLocalization: "en",
     platforms: [
-        .iOS(.v16)
+        .iOS(.v17)
     ],
     products: [
         .library(
             name: "IOSAppTimeTracker",
-            targets: ["IOSAppTimeTracker"]
-        ),
-    ],
-    dependencies: [
-        // Add your dependencies here
+            targets: ["IOSAppTimeTracker"]),
+        .executable(
+            name: "iosapptimetracker",
+            targets: ["iosapptimetracker"])
     ],
     targets: [
         .target(
             name: "IOSAppTimeTracker",
             dependencies: [],
-            path: "Sources"
+            path: "Sources/App"
+        ),
+        .executableTarget(
+            name: "iosapptimetracker",
+            dependencies: ["IOSAppTimeTracker"],
+            path: "Sources/CLI"
         ),
         .testTarget(
             name: "IOSAppTimeTrackerTests",
             dependencies: ["IOSAppTimeTracker"],
-            path: "Tests"
+            path: "Tests/AppTests"
         )
     ]
 )

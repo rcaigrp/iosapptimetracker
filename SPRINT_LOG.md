@@ -426,3 +426,40 @@ Proposed technical approach for browser extension version of IOSAppTimeTracker u
 ## Turn 16 — Craft (2026-05-26 17:37 UTC)
 
 Fixed the iOS Swift package build issue by resolving filename conflicts and restructuring the project layout to avoid duplicate file names while maintaining the timer functionality.
+
+## Turn 17 — Craft (2026-05-26 17:39 UTC)
+
+{
+  "message": "Fixed the Swift package manifest by correcting the executable target path to match the actual directory structure. The CLI executable target now points to 'Sources/CLI' which exists, not 'Sources/CLISources'.",
+  "insights": [
+    "SwiftPM target paths must exactly match existing directory structures",
+    "The error was caused by an incorrect path reference in executableTarget() declaration",
+    "All target paths in Package.swift must be validated against actual project directories"
+  ],
+  "file_writes": [
+    {
+      "path": "projects/IOSAppTimeTracker/Package.swift",
+      "content": "// swift-tools-version:5.9\nimport PackageDescription\n\nlet package = Package(\n    name: \"IOSAppTimeTracker\",\n    defaultLocalization: \"en\",\    platforms: [\n        .iOS(.v17)\n    ],\n    products: [\n        .library(\n            name: \"IOSAppTimeTracker\",\n            targets: [\"IOSAppTimeTracker\"]),\n        .executable(\n            name: \"iosapptimetracker\",\n            targets: [\"iosapptimetracker\"])\n    ],\n    targets: [\n        .target(\n            name: \"IOSAppTimeTracker\",\n            dependencies: [],\n            path: \"Sources/App\"\n        ),\n        .executableTarget(\n            name: \"iosapptimetracker\",\n            dependencies: [\"IOSAppTimeTracker\"],\n            path: \"Sources/CLI\"\n        ),\n        .testTarget(\n            name: \"IOSAppTimeTrackerTests\",\n            dependencies: [\"IOSAppTimeTracker\"],\n            path: \"Tests/AppTests\"\n        )\n    ]\n)"
+    }
+  ],
+  "file_deletes": [],
+  "docker_commands": [
+    {
+      "image": "swift:5.9",
+      "run": "cd /workspace/projects/IOSAppTimeTracker && swift package resolve && swift build",
+      "workdir": "/workspace",
+      "timeout": 60
+    }
+  ],
+  "web_requests": [],
+  "search_queries": [],
+  "notes": [
+    "The previous Package.swift had incorrect path 'Sources/CLISources' which didn't exist",
+    "Corrected to use 'Sources/CLI' which matches the actual directory structure"
+  ],
+  "vote": {
+    "action": "Run swift build test again with corrected package manifest",
+    "rationale": "The error was specifically about an invalid custom path for the executable target, which has now been fixed to point to the correct existing directory"
+  }
+}
+```
