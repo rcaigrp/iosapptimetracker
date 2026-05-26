@@ -4,7 +4,8 @@ import SwiftUI
 struct IOSAppTimeTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            DashboardView()
+            // Main dashboard view would go here
+            Text("Time Tracker App")
         }
     }
 }

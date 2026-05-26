@@ -199,3 +199,7 @@ Implemented SettingsView SwiftUI view with secure credential input fields for Ji
 ## Turn 9 — Craft (2026-05-26 17:02 UTC)
 
 Implemented Jira API client with URLSession for iOS app, including rate limit handling with exponential backoff strategy and timestamp tracking. Created a reusable NetworkManager class that handles authentication, request queuing, and retry logic.
+
+## Turn 10 — Craft (2026-05-26 17:04 UTC)
+
+Implemented SettingsView SwiftUI screen with Jira credentials input fields, secure Keychain storage integration, and input validation. Created SettingsViewModel for state management and credential handling.
