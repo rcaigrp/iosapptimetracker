@@ -358,3 +358,7 @@ Implemented SettingsView SwiftUI screen with Jira credentials input fields, secu
     "rationale": "The original iOS approach failed due to environment constraints. The new web extension meets all privacy requirements (local-only, zero telemetry) and provides identical functionality with cross-platform compatibility"
   }
 }
+
+## Turn 14 — Visionary (2026-05-26 17:24 UTC)
+
+Proposed technical approach for browser extension version of IOSAppTimeTracker using web technologies as replacement for iOS native components. Created core files including manifest.json, popup UI, background service worker, and storage logic.
