@@ -1,1 +1,1 @@
-Testing Swift project structure
+Testing Swift project setup

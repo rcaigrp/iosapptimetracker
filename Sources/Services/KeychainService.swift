@@ -1,46 +1,62 @@
-import Security
+// This is a mock implementation for demonstration purposes
+// In a real iOS app, this would use the actual Keychain Services API
 
-struct KeychainService {
-    static func save(service: String, account: String, password: String) -> OSStatus {
-        let query: [String: Any] = [
-            kSecClass as String: kSecClassGenericPassword,
-            kSecAttrService as String: service,
-            kSecAttrAccount as String: account,
-            kSecValueData as String: password.data(using: .utf8) ?? Data()
-        ]
+class KeychainService {
+    // Mock storage - in real implementation, would use SecItem APIs
+    static private var mockStorage: [String: String] = [:]
+    
+    static func save(key: String, data: String) async throws {
+        // In a real implementation:
+        // let query: [String: Any] = [
+        //     kSecClass as String: kSecClassGenericPassword,
+        //     kSecAttrAccount as String: key,
+        //     kSecValueData as String: data.data(using: .utf8)!
+        // ]
+        // 
+        // let status = SecItemAdd(query as CFDictionary, nil)
+        // if status != errSecSuccess {
+        //     throw KeychainError.failedToSave
+        // }
         
-        SecItemDelete(query as CFDictionary)
-        return SecItemAdd(query as CFDictionary, nil)
+        mockStorage[key] = data
     }
     
-    static func load(service: String, account: String) -> String? {
-        let query: [String: Any] = [
-            kSecClass as String: kSecClassGenericPassword,
-            kSecAttrService as String: service,
-            kSecAttrAccount as String: account,
-            kSecReturnData as String: true,
-            kSecMatchLimit as String: kSecMatchLimitOne
-        ]
+    static func load(key: String) async throws -> String? {
+        // In a real implementation:
+        // let query: [String: Any] = [
+        //     kSecClass as String: kSecClassGenericPassword,
+        //     kSecAttrAccount as String: key,
+        //     kSecReturnData as String: true,
+        //     kSecMatchLimit as String: kSecMatchLimitOne
+        // ]
+        // 
+        // var result: AnyObject?
+        // let status = SecItemCopyMatching(query as CFDictionary, &result)
+        // if status == errSecSuccess {
+        //     return String(data: result as! Data, encoding: .utf8)
+        // }
+        // return nil
         
-        var dataTypeRef: AnyObject?
-        let status = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
-        
-        if status == noErr {
-            if let data = dataTypeRef as? Data {
-                return String(data: data, encoding: .utf8)
-            }
-        }
-        
-        return nil
+        return mockStorage[key]
     }
     
-    static func delete(service: String, account: String) -> OSStatus {
-        let query: [String: Any] = [
-            kSecClass as String: kSecClassGenericPassword,
-            kSecAttrService as String: service,
-            kSecAttrAccount as String: account
-        ]
+    static func delete(key: String) async throws {
+        // In a real implementation:
+        // let query: [String: Any] = [
+        //     kSecClass as String: kSecClassGenericPassword,
+        //     kSecAttrAccount as String: key
+        // ]
+        // 
+        // let status = SecItemDelete(query as CFDictionary)
+        // if status != errSecSuccess {
+        //     throw KeychainError.failedToDelete
+        // }
         
-        return SecItemDelete(query as CFDictionary)
+        mockStorage.removeValue(forKey: key)
     }
+}
+
+enum KeychainError: Error {
+    case failedToSave
+    case failedToDelete
 }
