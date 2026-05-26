@@ -1,13 +1,7 @@
 import Foundation
-import SwiftData
 
-@Model
-class Project {
-    var name: String
-    var createdAt: Date
-    
-    init(name: String) {
-        self.name = name
-        self.createdAt = Date()
-    }
+struct Project: Codable, Identifiable {
+    let id = UUID()
+    let name: String
+    let key: String
 }

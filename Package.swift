@@ -1,4 +1,4 @@
-// swift-tools-version: 5.9
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
@@ -10,6 +10,9 @@ let package = Package(
         .library(
             name: "IOSAppTimeTracker",
             targets: ["IOSAppTimeTracker"]),
+        .executable(
+            name: "IOSAppTimeTrackerExecutable",
+            targets: ["IOSAppTimeTracker"])
     ],
     dependencies: [
         // Add dependencies here
@@ -17,9 +20,11 @@ let package = Package(
     targets: [
         .target(
             name: "IOSAppTimeTracker",
-            dependencies: []),
+            dependencies: [],
+            path: "Sources"),
         .testTarget(
             name: "IOSAppTimeTrackerTests",
-            dependencies: ["IOSAppTimeTracker"]),
+            dependencies: ["IOSAppTimeTracker"],
+            path: "Tests")
     ]
 )
