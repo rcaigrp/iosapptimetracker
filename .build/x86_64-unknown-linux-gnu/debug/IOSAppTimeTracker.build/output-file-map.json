@@ -1,0 +1,143 @@
+{
+  "": {
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/master.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/App.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/App.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/App.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/App~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/App.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/App/JiraAPIManager.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/App/JiraAPIManager.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/App/JiraAPIManager.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/App/JiraAPIManager~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/App/JiraAPIManager.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/ContentView.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/ContentView.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/ContentView.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/ContentView.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/JiraAPI.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraAPI.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraAPI.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraAPI~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraAPI.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/JiraAPIClient.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraAPIClient.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraAPIClient.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraAPIClient~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraAPIClient.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/JiraProject.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraProject.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraProject.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraProject~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraProject.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/JiraService.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraService.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraService.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraService~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/JiraService.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/KeychainService.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/KeychainService.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/KeychainService.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/KeychainService~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/KeychainService.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/Models/JiraAPIManager.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/JiraAPIManager.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/JiraAPIManager.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/JiraAPIManager~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/JiraAPIManager.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/Models/JiraProject.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/JiraProject.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/JiraProject.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/JiraProject~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/JiraProject.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/Models/Project.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/Project.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/Project.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/Project~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/Project.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/Models/TimeEntry.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/TimeEntry.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/TimeEntry.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/TimeEntry~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/TimeEntry.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/Models/TimeLog.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/TimeLog.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/TimeLog.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/TimeLog~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Models/TimeLog.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/NetworkManager.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/NetworkManager.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/NetworkManager.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/NetworkManager~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/NetworkManager.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/ProjectModel.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/ProjectModel.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/ProjectModel.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/ProjectModel~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/ProjectModel.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/Services/JiraAPIService.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Services/JiraAPIService.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Services/JiraAPIService.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Services/JiraAPIService~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Services/JiraAPIService.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/Services/KeychainService.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Services/KeychainService.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Services/KeychainService.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Services/KeychainService~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Services/KeychainService.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/SettingsView.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/SettingsView.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/SettingsView.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/SettingsView~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/SettingsView.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/TimerView.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/TimerView.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/TimerView.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/TimerView~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/TimerView.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/Views/ContentView.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/ContentView.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/ContentView.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/ContentView.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/Views/DashboardView.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/DashboardView.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/DashboardView.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/DashboardView~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/DashboardView.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/Views/ManualEntryView.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/ManualEntryView.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/ManualEntryView.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/ManualEntryView~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/ManualEntryView.swiftdeps"
+  },
+  "/workspace/projects/IOSAppTimeTracker/Sources/Views/SettingsView.swift": {
+    "dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/SettingsView.d",
+    "object": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/SettingsView.swift.o",
+    "swiftmodule": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/SettingsView~partial.swiftmodule",
+    "swift-dependencies": "/workspace/projects/IOSAppTimeTracker/.build/x86_64-unknown-linux-gnu/debug/IOSAppTimeTracker.build/Views/SettingsView.swiftdeps"
+  }
+}

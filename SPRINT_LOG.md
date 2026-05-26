@@ -422,3 +422,7 @@ Proposed technical approach for browser extension version of IOSAppTimeTracker u
         "rationale": "The extension is complete with all required features. Testing will verify it installs correctly and functions as expected without cloud dependencies or telemetry"
     }
 }
+
+## Turn 16 — Craft (2026-05-26 17:37 UTC)
+
+Fixed the iOS Swift package build issue by resolving filename conflicts and restructuring the project layout to avoid duplicate file names while maintaining the timer functionality.
