@@ -1,14 +1,16 @@
+import Foundation
 import SwiftData
 
 @Model
-final class TimeEntry {
-    var projectName: String
+class TimeEntry {
+    var project: Project?
     var startTime: Date
     var endTime: Date?
     var duration: TimeInterval = 0
+    var notes: String?
     
-    init(projectName: String, startTime: Date) {
-        self.projectName = projectName
+    init(project: Project?, startTime: Date = Date()) {
+        self.project = project
         self.startTime = startTime
     }
 }

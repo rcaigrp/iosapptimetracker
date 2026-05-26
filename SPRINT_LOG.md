@@ -128,3 +128,7 @@ Creating a new project for the browser extension LocalTrack since the iOS projec
     "rationale": "The tests now have proper structure with all required files and can validate the LocalTrack extension meets acceptance criteria"
   }
 }
+
+## Turn 3 — Craft (2026-05-26 16:47 UTC)
+
+Fixed the timeout issue by creating a proper Swift package structure for the iOS app. Implemented the core functionality including SwiftUI views, SwiftData models, and timer logic. The app now has working timer controls, project list display, and local persistence.
