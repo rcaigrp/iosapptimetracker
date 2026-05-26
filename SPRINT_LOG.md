@@ -71,3 +71,7 @@ Initialized TimeTracker project structure with required files and set status to 
 ## Turn 38 — Craft (2026-05-26 16:28 UTC)
 
 Fixed the Swift Jira API service by removing network calls and rewriting tests to use mocks instead of real HTTP requests. The project now correctly implements a local-only time tracking extension with no external dependencies.
+
+## Turn 39 — Manager (2026-05-26 16:29 UTC)
+
+Resuming the TimeTracker project by updating its project.json to active status with 3 additional meetings budget and creating the initial directory structure and README.md for the iOS app.
