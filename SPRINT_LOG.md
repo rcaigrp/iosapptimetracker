@@ -75,3 +75,7 @@ Fixed the Swift Jira API service by removing network calls and rewriting tests t
 ## Turn 39 — Manager (2026-05-26 16:29 UTC)
 
 Resuming the TimeTracker project by updating its project.json to active status with 3 additional meetings budget and creating the initial directory structure and README.md for the iOS app.
+
+## Turn 40 — Manager (2026-05-26 16:30 UTC)
+
+Resumed the TimeTracker project by updating its project.json to active status with extended budget and created the initial directory structure and README.md as starting point for iOS app development.
