@@ -195,3 +195,7 @@ Created Jira API client with rate limit handling and Keychain credential storage
 ## Turn 8 — Craft (2026-05-26 17:00 UTC)
 
 Implemented SettingsView SwiftUI view with secure credential input fields for Jira integration. Created proper validation and Keychain integration for storing API credentials securely.
+
+## Turn 9 — Craft (2026-05-26 17:02 UTC)
+
+Implemented Jira API client with URLSession for iOS app, including rate limit handling with exponential backoff strategy and timestamp tracking. Created a reusable NetworkManager class that handles authentication, request queuing, and retry logic.
