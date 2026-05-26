@@ -1,41 +1,77 @@
-// MARK: - Settings View
 import SwiftUI
 
-struct SettingsView: View {
-    @State private var jiraBaseURL = ""
-    @State private var jiraAPIToken = ""
-    @State private var showAlert = false
+class SettingsViewModel: ObservableObject {
+    @Published var jiraBaseUrl = ""
+    @Published var jiraApiToken = ""
+    @Published var showAlert = false
+    @Published var alertMessage = ""
     
-    @StateObject private var apiManager = JiraAPIManager()
+    func validateInputs() -> Bool {
+        guard !jiraBaseUrl.trimmed.isEmpty else {
+            alertMessage = "Jira Base URL is required"
+            showAlert = true
+            return false
+        }
+        
+        guard !jiraApiToken.trimmed.isEmpty else {
+            alertMessage = "Jira API Token is required"
+            showAlert = true
+            return false
+        }
+        
+        // Basic URL validation
+        guard let url = URL(string: jiraBaseUrl), url.scheme != nil else {
+            alertMessage = "Invalid Jira Base URL format"
+            showAlert = true
+            return false
+        }
+        
+        return true
+    }
+    
+    func saveCredentials() {
+        if validateInputs() {
+            // Save to Keychain (implementation details would go here)
+            print("Saving credentials for \(jiraBaseUrl)")
+        }
+    }
+}
+
+struct SettingsView: View {
+    @StateObject private var viewModel = SettingsViewModel()
     
     var body: some View {
         NavigationStack {
             Form {
-                Section(header: Text("Jira API Configuration")) {
-                    TextField("Jira Base URL", text: $jiraBaseURL)
+                Section(header: Text("Jira API Credentials")) {
+                    TextField("Jira Base URL", text: $viewModel.jiraBaseUrl)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
-                    
-                    SecureField("API Token", text: $jiraAPIToken)
+                        
+                    SecureField("API Token", text: $viewModel.jiraApiToken)
                 }
                 
                 Section {
                     Button("Save Credentials") {
-                        apiManager.saveCredentials(baseURL: jiraBaseURL, apiToken: jiraAPIToken)
-                        showAlert = true
+                        viewModel.saveCredentials()
                     }
-                    .disabled(jiraBaseURL.isEmpty || jiraAPIToken.isEmpty)
-                    
-                    Button("Clear Credentials") {
-                        apiManager.clearCredentials()
-                    }
+                    .disabled(viewModel.jiraBaseUrl.trimmed.isEmpty || viewModel.jiraApiToken.trimmed.isEmpty)
                 }
             }
             .navigationTitle("Settings")
-            .alert("Credentials Saved", isPresented: $showAlert) {
-                Button("OK") {}
+            .alert("Validation Error", isPresented: $viewModel.showAlert) {
+                Button("OK") { }
+            } message: {
+                Text(viewModel.alertMessage)
             }
         }
+    }
+}
+
+// Extension to trim whitespace
+extension String {
+    var trimmed: String {
+        self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }
 

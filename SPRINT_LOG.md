@@ -183,3 +183,7 @@ Fixed the timeout issue by creating a proper Swift package structure for the iOS
 ## Turn 5 — Craft (2026-05-26 16:53 UTC)
 
 Implemented JiraAPIManager.swift with Keychain credential storage and SwiftData models for time tracking. Created TimeLog model with proper SwiftUI initialization and added necessary import statements.
+
+## Turn 6 — Craft (2026-05-26 16:55 UTC)
+
+Implemented SettingsView SwiftUI view with secure credential input fields for Jira base URL and API token, integrated with Keychain storage for secure credential handling, and added input validation before saving
