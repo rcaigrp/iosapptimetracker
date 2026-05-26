@@ -79,3 +79,7 @@ Resuming the TimeTracker project by updating its project.json to active status w
 ## Turn 40 — Manager (2026-05-26 16:30 UTC)
 
 Resumed the TimeTracker project by updating its project.json to active status with extended budget and created the initial directory structure and README.md as starting point for iOS app development.
+
+## Turn 1 — Manager (2026-05-26 16:34 UTC)
+
+Creating a new project for the browser extension LocalTrack since the iOS project has been parked and we need to start fresh with the correct project scope. The browser extension requires Vanilla JS, HTML, CSS with Manifest V3 and must be completely local-only with no cloud dependencies.
