@@ -59,3 +59,7 @@ Initialized TimeTracker project directory structure and created project.json wit
   }
 }
 ```
+
+## Turn 36 — Craft (2026-05-26 16:17 UTC)
+
+Fixed the timeout issue by completing the JiraAPIService.swift implementation and creating proper test files with mocks. The service now includes complete URLSession integration, error handling, and rate limiting support.
