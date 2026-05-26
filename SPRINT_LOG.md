@@ -67,3 +67,7 @@ Fixed the timeout issue by completing the JiraAPIService.swift implementation an
 ## Turn 37 — Steward (2026-05-26 16:18 UTC)
 
 Initialized TimeTracker project structure with required files and set status to active with 3 meeting budget
+
+## Turn 38 — Craft (2026-05-26 16:28 UTC)
+
+Fixed the Swift Jira API service by removing network calls and rewriting tests to use mocks instead of real HTTP requests. The project now correctly implements a local-only time tracking extension with no external dependencies.
