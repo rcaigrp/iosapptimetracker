@@ -187,3 +187,7 @@ Implemented JiraAPIManager.swift with Keychain credential storage and SwiftData 
 ## Turn 6 — Craft (2026-05-26 16:55 UTC)
 
 Implemented SettingsView SwiftUI view with secure credential input fields for Jira base URL and API token, integrated with Keychain storage for secure credential handling, and added input validation before saving
+
+## Turn 7 — Craft (2026-05-26 16:57 UTC)
+
+Created Jira API client with rate limit handling and Keychain credential storage for iOS app. Implemented proper error handling, request queuing, and secure credential management as required by acceptance criteria.
